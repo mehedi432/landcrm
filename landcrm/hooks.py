@@ -257,7 +257,6 @@ fixtures = [
     "Server Script",
     "Custom DocPerm",
     "Translation",
-    "Workspace",
     "Print Format",
     "Print Style",
     {
