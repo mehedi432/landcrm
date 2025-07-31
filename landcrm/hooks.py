@@ -273,12 +273,6 @@ fixtures = [
         }
     },
     {
-        "doctype": "Module Def",
-        "filters": {
-            "app_name": ["=", "landcrm"]
-        }
-    },
-    {
         "doctype": "Workflow",
         "filters": {
             "is_active": ["=", 1]
