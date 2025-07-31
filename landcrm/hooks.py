@@ -259,28 +259,4 @@ fixtures = [
     "Translation",
     "Print Format",
     "Print Style",
-    {
-        "doctype": "Report",
-        "filters": {
-            "is_standard": ["=", "No"]
-        }
-    },
-    {
-        "doctype": "DocType",
-        "filters": {
-            "custom": ["=", 1]  # Only export custom doctypes
-        }
-    },
-    {
-        "doctype": "Workflow",
-        "filters": {
-            "is_active": ["=", 1]
-        }
-    },
-    {
-        "doctype": "Workflow State"
-    },
-    {
-        "doctype": "Workflow Action"
-    }
 ]
