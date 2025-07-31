@@ -1,0 +1,138 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "TRACT PROFILE-.#####",
+ "creation": "2025-07-16 07:38:46.734780",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_map_import",
+  "map_name",
+  "status",
+  "processed_on",
+  "column_break_edon",
+  "longitude",
+  "survey_pdf",
+  "column_break_sfks",
+  "latitude",
+  "tract_map_file",
+  "section_break_khxw",
+  "tracts",
+  "section_break_pskz",
+  "amended_from",
+  "column_break_ufnn",
+  "section_end"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_pskz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_map_import",
+   "fieldtype": "Section Break",
+   "label": "Tract Map Import"
+  },
+  {
+   "fieldname": "map_name",
+   "fieldtype": "Data",
+   "label": "Map Name"
+  },
+  {
+   "fieldname": "tract_map_file",
+   "fieldtype": "Attach",
+   "label": "Map File"
+  },
+  {
+   "fieldname": "survey_pdf",
+   "fieldtype": "Attach",
+   "label": "Survey Document"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Import Status",
+   "options": "Draft\nProcessed"
+  },
+  {
+   "fieldname": "processed_on",
+   "fieldtype": "Date",
+   "label": "Processed On"
+  },
+  {
+   "fieldname": "tracts",
+   "fieldtype": "Table",
+   "label": "Land Tract",
+   "options": "Land Tract"
+  },
+  {
+   "fieldname": "section_end",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Tract Profile",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_edon",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_khxw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_ufnn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_sfks",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Data",
+   "label": "Latitude"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Data",
+   "label": "Longitude"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-07-23 07:54:06.222450",
+ "modified_by": "Administrator",
+ "module": "Landcrm",
+ "name": "Tract Profile",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

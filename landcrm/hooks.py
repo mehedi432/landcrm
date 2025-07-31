@@ -237,3 +237,57 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+# fixtures = [
+#     "Custom Field",
+#     "Property Setter",
+#     "Client Script",
+#     {
+#         "doctype": "Report",
+#         "filters": {
+#             "is_standard": ["=", "No"]  # Only export custom (non-standard) reports
+#         }
+#     }
+# ]
+
+
+fixtures = [
+    "Custom Field",
+    "Property Setter",
+    "Client Script",
+    "Server Script",
+    "Custom DocPerm",
+    "Translation",
+    "Workspace",
+    "Print Format",
+    "Print Style",
+    {
+        "doctype": "Report",
+        "filters": {
+            "is_standard": ["=", "No"]
+        }
+    },
+    {
+        "doctype": "DocType",
+        "filters": {
+            "custom": ["=", 1]  # Only export custom doctypes
+        }
+    },
+    {
+        "doctype": "Module Def",
+        "filters": {
+            "app_name": ["=", "landcrm"]
+        }
+    },
+    {
+        "doctype": "Workflow",
+        "filters": {
+            "is_active": ["=", 1]
+        }
+    },
+    {
+        "doctype": "Workflow State"
+    },
+    {
+        "doctype": "Workflow Action"
+    }
+]

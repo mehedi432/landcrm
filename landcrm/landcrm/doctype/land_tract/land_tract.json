@@ -1,0 +1,220 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-16 07:43:59.932954",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_ocs5",
+  "tract_id",
+  "tract_name",
+  "acres",
+  "coordinates",
+  "price",
+  "utilities_enabled",
+  "electricity",
+  "well_water",
+  "stream",
+  "pond",
+  "septic",
+  "city_water",
+  "sewer",
+  "notes",
+  "listed_price",
+  "price_updated_on",
+  "original_price",
+  "price_notes",
+  "status",
+  "last_status_update",
+  "slack_channel_sent",
+  "open_tract_media",
+  "latitude",
+  "longitude",
+  "address",
+  "country",
+  "state",
+  "zip_code",
+  "county"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_ocs5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tract_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tract ID",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "tract_name",
+   "fieldtype": "Data",
+   "label": "Tract Name"
+  },
+  {
+   "fieldname": "acres",
+   "fieldtype": "Float",
+   "label": "Acreage (Acres)"
+  },
+  {
+   "fieldname": "coordinates",
+   "fieldtype": "Text",
+   "label": "Coordinates (WKT or GeoJSON)"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "label": "Price"
+  },
+  {
+   "default": "0",
+   "fieldname": "utilities_enabled",
+   "fieldtype": "Check",
+   "label": "Utilities Enabled"
+  },
+  {
+   "default": "0",
+   "fieldname": "electricity",
+   "fieldtype": "Check",
+   "label": "Electricity"
+  },
+  {
+   "default": "0",
+   "fieldname": "well_water",
+   "fieldtype": "Check",
+   "label": "Well Water"
+  },
+  {
+   "default": "0",
+   "fieldname": "stream",
+   "fieldtype": "Check",
+   "label": "Stream"
+  },
+  {
+   "default": "0",
+   "fieldname": "pond",
+   "fieldtype": "Check",
+   "label": "Pond"
+  },
+  {
+   "default": "0",
+   "fieldname": "septic",
+   "fieldtype": "Check",
+   "label": "Septic"
+  },
+  {
+   "default": "0",
+   "fieldname": "city_water",
+   "fieldtype": "Check",
+   "label": "City Water"
+  },
+  {
+   "default": "0",
+   "fieldname": "sewer",
+   "fieldtype": "Check",
+   "label": "Sewer"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "listed_price",
+   "fieldtype": "Currency",
+   "label": "Listed Price"
+  },
+  {
+   "fieldname": "price_updated_on",
+   "fieldtype": "Date",
+   "label": "Price Updated On"
+  },
+  {
+   "fieldname": "original_price",
+   "fieldtype": "Currency",
+   "label": "Original Price"
+  },
+  {
+   "fieldname": "price_notes",
+   "fieldtype": "Small Text",
+   "label": "Price Notes"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Available\nPending\nSold"
+  },
+  {
+   "fieldname": "last_status_update",
+   "fieldtype": "Datetime",
+   "label": "Last Status Update"
+  },
+  {
+   "default": "0",
+   "fieldname": "slack_channel_sent",
+   "fieldtype": "Check",
+   "label": "Slack Channel Sent"
+  },
+  {
+   "columns": 2,
+   "fieldname": "open_tract_media",
+   "fieldtype": "Button",
+   "label": "Add Media",
+   "options": "Tract Media"
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Float",
+   "label": "Latitude"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Float",
+   "label": "Longitude"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "zip_code",
+   "fieldtype": "Data",
+   "label": "Zip Code"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country"
+  },
+  {
+   "fieldname": "county",
+   "fieldtype": "Data",
+   "label": "County"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-07-23 08:18:22.863848",
+ "modified_by": "Administrator",
+ "module": "Landcrm",
+ "name": "Land Tract",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-18 08:51:04.398025",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "tract_profile",
+  "media_type",
+  "images",
+  "uploaded_on",
+  "column_break_srzq",
+  "tract_row_id",
+  "drone_video",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "tract_profile",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Tract Profile",
+   "options": "Tract Profile",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tract_row_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Tract Row ID",
+   "options": "Land Tract",
+   "reqd": 1
+  },
+  {
+   "fieldname": "media_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Media Type",
+   "options": "Image\nDrone Footage\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "images",
+   "fieldtype": "Table",
+   "label": "Images",
+   "options": "Tract Image Gallery"
+  },
+  {
+   "fieldname": "drone_video",
+   "fieldtype": "Attach",
+   "label": "Drone Footage"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "default": "now",
+   "fieldname": "uploaded_on",
+   "fieldtype": "Datetime",
+   "label": "Uploaded On"
+  },
+  {
+   "fieldname": "column_break_srzq",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-07-21 00:03:17.270334",
+ "modified_by": "Administrator",
+ "module": "Landcrm",
+ "name": "Tract Media",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
